@@ -82,15 +82,36 @@ Update the color palette in `app/globals.css`:
 The waitlist form uses a Next.js Server Action in `app/actions/waitlist.ts`. 
 Update this file to integrate with your preferred email service or database.
 
-## Deployment
+## Telegram Notifications
 
-Deploy easily with Vercel:
-```bash
-npm run build
-```
+The waitlist form sends notifications to Telegram when users sign up. To set up:
 
-Or deploy to any platform that supports Next.js.
+1. **Create a Telegram bot:**
+   - Message [@BotFather](https://t.me/botfather) in Telegram
+   - Use `/newbot` command and follow instructions
+   - Save the Bot Token
 
-## License
+2. **Get your Chat ID:**
+   - Message [@userinfobot](https://t.me/userinfobot) 
+   - Use `/start` command to get your Chat ID
+
+3. **Configure environment variables:**
+   ```bash
+   cp .env.local.example .env.local
+   ```
+   Then edit `.env.local` with your credentials:
+   ```
+   TELEGRAM_BOT_TOKEN=your_bot_token_here
+   TELEGRAM_CHAT_ID=your_chat_id_here
+   ```
+
+4. **Restart the development server:**
+   ```bash
+   npm run dev
+   ```
+
+See [TELEGRAM_SETUP.md](./TELEGRAM_SETUP.md) for detailed instructions.
+
+## Customization
 
 MIT License - feel free to use this as a template for your own SaaS landing pages.

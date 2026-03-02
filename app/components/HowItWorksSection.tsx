@@ -83,32 +83,22 @@ export function HowItWorksSection() {
                 <div className="absolute top-2 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-border rounded-full" />
 
                 {/* Screen content */}
-                <div className="w-32 h-64 border border-border/50 rounded-2xl bg-background/80 backdrop-blur-sm flex items-center justify-center shadow-inner">
+                <div className="w-32 h-64 border border-border/50 rounded-2xl bg-background/90 backdrop-blur-sm flex flex-col items-center justify-center shadow-inner pt-6 px-4 pb-4">
+                  {/* Image placeholder 9:16 - larger size */}
+                  <div className="w-24 h-36 bg-gradient-to-b from-muted/20 to-muted/10 border border-border/30 rounded-lg flex items-center justify-center relative mb-4">
+                    {/* Image icon placeholder */}
+                    <div className="w-8 h-8 border border-muted/40 border-dashed rounded flex items-center justify-center">
+                      <svg className="w-4 h-4 text-muted/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                      </svg>
+                    </div>
+                  </div>
+
+                  {/* Text content below image */}
                   <div className="text-center">
-                    <motion.div
-                      className="text-xs text-muted mb-4 font-medium"
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      transition={{ delay: 1, duration: 0.5 }}
-                    >
-                      Uber
-                    </motion.div>
-                    <motion.div
-                      className="text-2xl font-bold text-foreground mb-2"
-                      initial={{ scale: 0 }}
-                      animate={{ scale: 1 }}
-                      transition={{ delay: 1.2, duration: 0.3, type: 'spring' }}
-                    >
-                      40 PLN
-                    </motion.div>
-                    <motion.div
-                      className="text-xs text-muted"
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: 1.5, duration: 0.4 }}
-                    >
-                      ≈ $10.50 USD
-                    </motion.div>
+                    <div className="text-xs text-muted mb-1 font-medium">Receipt</div>
+                    <div className="text-sm font-semibold text-foreground mb-1">Uber ride</div>
+                    <div className="text-xs text-muted">Auto-categorized</div>
                   </div>
                 </div>
               </div>
