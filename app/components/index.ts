@@ -1,0 +1,7 @@
+export { HeroSection } from './HeroSection'
+export { PainPointsSection } from './PainPointsSection'
+export { HowItWorksSection } from './HowItWorksSection'
+export { FeaturesSection } from './FeaturesSection'
+export { TimelineSection } from './TimelineSection'
+export { BuilderSection } from './BuilderSection'
+export { WaitlistSection } from './WaitlistSection'

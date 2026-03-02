@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Budget Tracker - Waitlist Landing Page
+
+An ultra-minimalist SaaS landing page for a multi-currency AI expense tracker, built with Next.js 14+, Tailwind CSS, and Framer Motion.
+
+## Features
+
+- **Ultra-minimalistic design** inspired by Notion, Raycast, and early Stripe
+- **Monochromatic color scheme** with refined off-white/charcoal palette
+- **Smooth scroll animations** powered by Framer Motion
+- **Responsive design** that looks great on all devices
+- **Waitlist functionality** with Next.js Server Actions
+- **Toast notifications** for form feedback
+- **Accessibility-focused** with proper labels and keyboard navigation
+
+## Tech Stack
+
+- **Next.js 14+** with App Router
+- **Tailwind CSS 4** for styling
+- **Framer Motion** for animations
+- **Lucide React** for icons
+- **React Hot Toast** for notifications
+- **TypeScript** for type safety
 
 ## Getting Started
 
-First, run the development server:
-
+1. **Install dependencies:**
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Run the development server:**
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. **Open your browser:**
+Navigate to [http://localhost:3000](http://localhost:3000)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
 
-## Learn More
+```
+app/
+├── components/           # Landing page sections
+│   ├── HeroSection.tsx
+│   ├── PainPointsSection.tsx
+│   ├── HowItWorksSection.tsx
+│   ├── FeaturesSection.tsx
+│   ├── TimelineSection.tsx
+│   ├── BuilderSection.tsx
+│   ├── WaitlistSection.tsx
+│   └── index.ts
+├── actions/
+│   └── waitlist.ts      # Server action for form submission
+├── globals.css          # Global styles and design tokens
+├── layout.tsx           # Root layout with Geist fonts
+└── page.tsx            # Main landing page
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Design System
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Typography:** Geist Sans for clean, modern text
+- **Colors:** Monochromatic palette with CSS custom properties
+- **Spacing:** Generous whitespace for clean, breathable design
+- **Animation:** Subtle, smooth transitions and scroll effects
+- **Components:** Minimal borders, soft shadows, rounded corners
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Customization
 
-## Deploy on Vercel
+### Colors
+Update the color palette in `app/globals.css`:
+```css
+:root {
+  --background: #FAFAFA;
+  --foreground: #111111;
+  --border: #E5E5E5;
+  --muted: #666666;
+  --accent: #111111;
+}
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Form Submission
+The waitlist form uses a Next.js Server Action in `app/actions/waitlist.ts`. 
+Update this file to integrate with your preferred email service or database.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deployment
+
+Deploy easily with Vercel:
+```bash
+npm run build
+```
+
+Or deploy to any platform that supports Next.js.
+
+## License
+
+MIT License - feel free to use this as a template for your own SaaS landing pages.
