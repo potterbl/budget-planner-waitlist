@@ -36,7 +36,7 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Stop losing money to currency math.
+            Meet SpendWarden. The ruthless AI tracker that actually saves you money.
           </motion.h1>
 
           <motion.p
@@ -45,7 +45,7 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            The minimalist AI expense tracker for expats & freelancers. Snap a receipt, let AI do the rest.
+            Your personal financial guard. Snap a receipt, text the bot, and let the Warden auto-convert and track every cent.
           </motion.p>
         </div>
       </div>

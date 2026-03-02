@@ -50,7 +50,7 @@ export function BuilderSection() {
             viewport={{ once: true }}
           >
             I earn in USD and spend locally. Existing apps were too bloated for multi-currency tracking.
-            So I built an AI tracker to fix my own problem. Now I'm opening it up.
+            So I built SpendWarden - the ruthless AI tracker to fix my own problem. Now I'm opening it up.
           </motion.p>
 
           <motion.div
@@ -61,21 +61,27 @@ export function BuilderSection() {
             viewport={{ once: true }}
           >
             <a
-              href="#"
+              href="https://www.linkedin.com/in/potterbl/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-3 border border-border rounded-lg hover:border-foreground transition-colors duration-300"
               aria-label="LinkedIn"
             >
               <Linkedin className="w-5 h-5 text-muted hover:text-foreground transition-colors" />
             </a>
             <a
-              href="#"
+              href="https://t.me/potter_bl"
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-3 border border-border rounded-lg hover:border-foreground transition-colors duration-300"
               aria-label="Telegram"
             >
               <MessageCircle className="w-5 h-5 text-muted hover:text-foreground transition-colors" />
             </a>
             <a
-              href="#"
+              href="https://instagram.com/potter.bl"
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-3 border border-border rounded-lg hover:border-foreground transition-colors duration-300"
               aria-label="Instagram"
             >

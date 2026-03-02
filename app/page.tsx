@@ -5,7 +5,8 @@ import {
   FeaturesSection,
   TimelineSection,
   BuilderSection,
-  WaitlistSection
+  WaitlistSection,
+  Footer
 } from './components'
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <TimelineSection />
       <BuilderSection />
       <WaitlistSection />
+      <Footer />
     </main>
   )
 }
