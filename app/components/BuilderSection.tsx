@@ -2,11 +2,15 @@
 
 import { motion } from 'framer-motion'
 import { Linkedin, MessageCircle, Instagram } from 'lucide-react'
+import { FloatingBlob } from './FloatingBlob'
 
 export function BuilderSection() {
   return (
-    <section className="py-24 px-6">
-      <div className="max-w-4xl mx-auto text-center">
+    <section className="py-24 px-6 relative overflow-hidden">
+      <FloatingBlob size="lg" position="top-left" delay={2} />
+      <FloatingBlob size="md" position="bottom-right" delay={5} />
+
+      <div className="max-w-4xl mx-auto text-center relative z-10">
         <motion.h2
           className="text-3xl md:text-4xl font-bold tracking-tight text-foreground mb-16"
           initial={{ opacity: 0, y: 30 }}

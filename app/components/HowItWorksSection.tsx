@@ -1,6 +1,8 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { GeometricPattern } from './GeometricPattern'
+import { AnimatedNetwork } from './AnimatedNetwork'
 
 const steps = [
   {
@@ -27,8 +29,11 @@ const steps = [
 
 export function HowItWorksSection() {
   return (
-    <section className="py-24 px-6">
-      <div className="max-w-6xl mx-auto">
+    <section className="py-24 px-6 relative overflow-hidden">
+      <GeometricPattern variant="grid" opacity={0.08} />
+      <AnimatedNetwork nodeCount={15} opacity={0.06} />
+
+      <div className="max-w-6xl mx-auto relative z-10">
         <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 30 }}
@@ -68,12 +73,43 @@ export function HowItWorksSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <div className="w-48 h-96 border border-border rounded-3xl bg-background shadow-sm flex items-center justify-center">
-              <div className="w-32 h-64 border border-border rounded-2xl bg-background/50 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-xs text-muted mb-4">Uber</div>
-                  <div className="text-2xl font-bold text-foreground mb-2">40 PLN</div>
-                  <div className="text-xs text-muted">≈ $10.50 USD</div>
+            <div className="relative">
+              {/* Phone shadow */}
+              <div className="absolute inset-0 bg-foreground/5 blur-2xl transform translate-y-4 scale-105 rounded-3xl" />
+
+              {/* Phone body */}
+              <div className="relative w-48 h-96 border-2 border-border rounded-3xl bg-gradient-to-b from-background to-background/95 shadow-2xl flex items-center justify-center overflow-hidden">
+                {/* Phone notch */}
+                <div className="absolute top-2 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-border rounded-full" />
+
+                {/* Screen content */}
+                <div className="w-32 h-64 border border-border/50 rounded-2xl bg-background/80 backdrop-blur-sm flex items-center justify-center shadow-inner">
+                  <div className="text-center">
+                    <motion.div
+                      className="text-xs text-muted mb-4 font-medium"
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ delay: 1, duration: 0.5 }}
+                    >
+                      Uber
+                    </motion.div>
+                    <motion.div
+                      className="text-2xl font-bold text-foreground mb-2"
+                      initial={{ scale: 0 }}
+                      animate={{ scale: 1 }}
+                      transition={{ delay: 1.2, duration: 0.3, type: 'spring' }}
+                    >
+                      40 PLN
+                    </motion.div>
+                    <motion.div
+                      className="text-xs text-muted"
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: 1.5, duration: 0.4 }}
+                    >
+                      ≈ $10.50 USD
+                    </motion.div>
+                  </div>
                 </div>
               </div>
             </div>

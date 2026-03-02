@@ -2,11 +2,33 @@
 
 import { motion } from 'framer-motion'
 import { ChevronDown } from 'lucide-react'
+import { MovingLines, FloatingDots } from './MovingElements'
 
 export function HeroSection() {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center px-6 py-24 relative">
-      <div className="max-w-4xl mx-auto text-center flex-1 flex items-center">
+    <section className="min-h-screen flex flex-col items-center justify-center px-6 py-24 relative overflow-hidden">
+      {/* Gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/10 to-background/30 pointer-events-none" />
+
+      {/* Движущиеся линии - появляются сразу */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.6, delay: 0 }}
+      >
+        <MovingLines />
+      </motion.div>
+
+      {/* Плавающие точки (звезды) - появляются чуть перед текстом */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+      >
+        <FloatingDots />
+      </motion.div>
+
+      <div className="max-w-4xl mx-auto text-center flex-1 flex items-center relative z-10">
         <div>
           <motion.h1
             className="text-5xl md:text-7xl font-bold tracking-tight text-foreground mb-8"

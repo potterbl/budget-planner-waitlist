@@ -1,10 +1,13 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { GeometricPattern } from './GeometricPattern'
 
 export function TimelineSection() {
   return (
-    <section className="py-24 px-6">
+    <section className="py-24 px-6 bg-background/30 backdrop-blur-sm border-y border-border/20 relative overflow-hidden">
+      <GeometricPattern variant="dots" opacity={0.08} />
+
       <div className="max-w-4xl mx-auto text-center">
         <motion.h2
           className="text-3xl md:text-4xl font-bold tracking-tight text-foreground mb-8"
@@ -30,4 +33,3 @@ export function TimelineSection() {
     </section>
   )
 }
-

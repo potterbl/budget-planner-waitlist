@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e33ddcc-c619-4384-94a5-14797ef52535" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    <list default="true" id="2e33ddcc-c619-4384-94a5-14797ef52535" name="Changes" comment="init">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/BuilderSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/BuilderSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/FeaturesSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/FeaturesSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/HeroSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/HeroSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/HowItWorksSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/HowItWorksSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/TimelineSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/TimelineSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/WaitlistSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/WaitlistSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,12 +97,25 @@
       <updated>1772482010567</updated>
       <workItem from="1772482011572" duration="2495000" />
       <workItem from="1772484573409" duration="13000" />
-      <workItem from="1772484587077" duration="843000" />
+      <workItem from="1772484587077" duration="3663000" />
     </task>
+    <task id="LOCAL-00001" summary="init">
+      <option name="closed" value="true" />
+      <created>1772485461770</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1772485461770</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

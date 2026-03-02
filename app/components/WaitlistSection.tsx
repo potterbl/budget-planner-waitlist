@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { useState } from 'react'
 import { submitWaitlistForm } from '../actions/waitlist'
 import toast from 'react-hot-toast'
+import { GeometricPattern } from './GeometricPattern'
 
 export function WaitlistSection() {
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -31,8 +32,10 @@ export function WaitlistSection() {
   }
 
   return (
-    <section className="py-24 px-6">
-      <div className="max-w-2xl mx-auto">
+    <section className="py-24 px-6 relative overflow-hidden">
+      <GeometricPattern variant="dots" opacity={0.12} />
+
+      <div className="max-w-2xl mx-auto relative z-10">
         <motion.div
           className="text-center mb-12"
           initial={{ opacity: 0, y: 30 }}
