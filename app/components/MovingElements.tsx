@@ -113,7 +113,7 @@ export function FloatingDots() {
           transition={{
             duration: 8 + Math.random() * 6,
             repeat: Infinity,
-            delay: Math.random() * 0.5, // Максимальная задержка 0.5 секунды
+            delay: Math.random() * 0.05, // Максимальная задержка 0.1 секунды
             ease: 'easeInOut'
           }}
         />

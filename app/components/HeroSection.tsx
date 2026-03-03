@@ -19,14 +19,7 @@ export function HeroSection() {
         <MovingLines />
       </motion.div>
 
-      {/* Плавающие точки (звезды) - появляются чуть перед текстом */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.1 }}
-      >
-        <FloatingDots />
-      </motion.div>
+      <FloatingDots />
 
       <div className="max-w-4xl mx-auto text-center flex-1 flex items-center relative z-10">
         <div>
