@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e33ddcc-c619-4384-94a5-14797ef52535" name="Changes" comment="SEO and social">
+    <list default="true" id="2e33ddcc-c619-4384-94a5-14797ef52535" name="Changes" comment="icon">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/BuilderSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/BuilderSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +63,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
@@ -97,6 +100,8 @@
       <workItem from="1772484573409" duration="13000" />
       <workItem from="1772484587077" duration="4540000" />
       <workItem from="1772528104196" duration="16000" />
+      <workItem from="1772534636364" duration="390000" />
+      <workItem from="1772535034632" duration="221000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -122,7 +127,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772494814818</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="icon">
+      <option name="closed" value="true" />
+      <created>1772534722140</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1772534722140</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,7 +145,8 @@
     <MESSAGE value="init" />
     <MESSAGE value="updates" />
     <MESSAGE value="SEO and social" />
-    <option name="LAST_COMMIT_MESSAGE" value="SEO and social" />
+    <MESSAGE value="icon" />
+    <option name="LAST_COMMIT_MESSAGE" value="icon" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
